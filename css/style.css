@@ -2,15 +2,20 @@
 * Created on: Mar 2024
 * This file contains the CSS for index.html
 */
+body {
+  background-color: white;
+
+}
+
 p {
   position: inherit;
   font-size: 2rem;
   color: black;
 }
 
-body {
-  background-color: white;
-
+.text-box {
+  position: relative;
+  left: 20px;
 }
 .right-image {
   position: relative;

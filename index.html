@@ -23,7 +23,7 @@
       <div class="right-image">
         <img src="./image.png" alt="triangle_img">
       </div>
-      <form action="#">
+      <form action="#" class="text-box">
         <!-- Simple Textfield -->
         <p>Input the unit(if you don't set the unit, cm is automatically used)</p>
         <div class="mdl-textfield mdl-js-textfield">
@@ -31,27 +31,29 @@
           <label class="mdl-textfield__label" for="sample2">unit here ...</label>
         </div>
         <!-- Numeric Textfield -->
+        <hr />
         <p>input triangle's height</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age-entered">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="get_height">
           <label class="mdl-textfield__label" for="get_height">input height here ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
+        <hr />
         <p>input triangle's base</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age-entered">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="get_base">
           <label class="mdl-textfield__label" for="get_base">input base here ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
+        <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="defUnit()"
           onclick="CaculateToClick()">
           Enter
         </button>
         <div>
-          <p id="result"></p>
+          <p id="Result"></p>
         </div>
       </form>
     </main>
